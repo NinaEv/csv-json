@@ -17,8 +17,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        File fileName = new File("src\\main\\java\\data.csv");
-        File result = new File("src\\main\\java\\data.json");
+        File fileName = new File("src\\main\\resources\\data.csv");
+        File result = new File("src\\main\\resources\\data.json");
         String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
         List<Employee> list = parseSCV(fileName, columnMapping);
         listToJson(result, list);
